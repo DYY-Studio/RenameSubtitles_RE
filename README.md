@@ -53,10 +53,10 @@
 
     add_char          向字符串添加指定长度的目标字符
     number_list       创建一个数组，或向该数组末尾添加一个新值
-    list_largest      求出数组中最大值，同时返回最大值所在的变量
-    list_minimum      求出数组中最小值，同时返回最小值所在的变量
+    list_largest      求出数组中最大值，同时返回最大值所在的变量名
+    list_minimum      求出数组中最小值，同时返回最小值所在的变量名
     list_appear       返回数组中出现的所有值(数组)
-    list_appear_most  通过list_appear返回的
+    list_appear_most  通过list_appear返回的数组计算列表中出现次数最多的值并返回其所在变量名
     long_string       计算字符串长度
     compare_list      将数组拆解递交给compare_string
     compare_string    将一个字符串与一整个数组中所有字符串比较
