@@ -306,7 +306,7 @@ for /f "tokens=*" %%a in ('echo') do (
 )
 set "echo_mode="
 
-set "bat_ver=RenameSubtitles RE: Ver1.0.11 UTF-8"
+set "bat_ver=RenameSubtitles RE: Ver1.0.11s UTF-8"
 title %bat_ver% [(c) yyfll]
 echo [INFO] %bat_ver%
 echo [INFO] Copyright(c) 2019-2021 yyfll
