@@ -1472,7 +1472,7 @@ if defined has_change for /f "tokens=1,2 delims=?" %%a in ("%filter%") do (
 )
 set "has_change="
 setlocal EnableDelayedExpansion
-call :add_char "?" "%vf_c%" "filter"
+call :add_char ":" "%vf_c%" "filter"
 setlocal DisableDelayedExpansion
 if defined ext_use_most_v (
 	set "filter=%filter%*%vf_x%"
@@ -1695,7 +1695,7 @@ if defined has_change for /f "tokens=1,2 delims=?" %%a in ("%s_filter%") do (
 	)
 )
 setlocal EnableDelayedExpansion
-call :add_char "?" "%sf_c%" "s_filter"
+call :add_char ":" "%sf_c%" "s_filter"
 setlocal DisableDelayedExpansion
 set "has_change="
 if defined ext_use_most_s (
