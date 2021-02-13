@@ -1,5 +1,5 @@
 # RenameSubtitles_RE
-### 适用于字幕视频匹配的Windows批量处理脚本（Latest Update：v1.0.10）
+### 适用于字幕视频匹配的Windows批量处理脚本（Latest Update：v1.0.11）
 ### Copyright(c) 2019-2021 yyfll (dyystudio@qq.com)
 
 更快，更准确的新一代视频字幕匹配批处理，NOW COMPLETE！
