@@ -52,6 +52,8 @@
 如赋任意值就写成`set "vid_subdir=A"`，设置为未定义就写成`set "vid_subdir="`
 
 ### 自定义变量列表
+*带"^"号为v1.1新增功能*
+
 **全局设定**
 | 变量名 | 作用 |
 | --- | --- |
@@ -62,6 +64,9 @@
 | cache_dir | 设定缓存文件的临时存放路径 |
 | check_same | 是否启用视频字幕匹配判断功能<sup>[1](#check_same)</sup> |
 | check_same_ex | 是否使用命令扩展加速`check_same`<sup>[2](#check_same_ex)</sup> |
+| new_match_method^ | 是否启用v1.1新匹配 |
+| direct_sub_match^ | 是否启用v1.1暴力字幕匹配 |
+| max_ep-range^ | v1.1匹配能够接受的最大集数长度 |
 
 **<a name="check_same">1</a>**: 该功能能够判断字幕是否已经和视频匹配，若匹配则不再重命名，启用该功能会明显降低速度
 
