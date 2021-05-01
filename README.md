@@ -78,6 +78,7 @@
 | show_howlong | 是否显示一次文件名比较所花费的时间 |
 | compare_limit | 两文件名之间误差的最大值，超过则不再继续比较 |
 | compare_limit_method | 控制达到`compare_limit`之后如何输出误差量 |
+| drop_minus | 丢弃误差量为负的结果（结合`compare_limit_method=""`使用）|
 | deviation_a | 集数长度容差<sup>[3](#deviation)</sup> |
 | deviation_b | 集数位置容差<sup>[3](#deviation)</sup> |
 | count_range | 控制每个文件要与多少个文件进行比较<sup>[4](#count_range)</sup> |
