@@ -52,42 +52,40 @@
 如赋任意值就写成`set "vid_subdir=A"`，设置为未定义就写成`set "vid_subdir="`
 
 ### 自定义变量列表
-*带"^"号为v1.1新增功能*
-
 **全局设定**
-| 变量名 | 作用 |
-| --- | --- |
-| subext | 可以匹配到的字幕扩展名 |
-| vidext | 可以匹配到的视频扩展名 |
-| ass_subdir | 搜索字幕时是否搜索子目录 |
-| vid_subdir | 搜索视频时是否搜索子目录 |
-| cache_dir | 设定缓存文件的临时存放路径 |
-| check_same | 是否启用视频字幕匹配判断功能<sup>[1](#check_same)</sup> |
-| check_same_ex | 是否使用命令扩展加速`check_same`<sup>[2](#check_same_ex)</sup> |
-| new_match_method^ | 是否启用v1.1新匹配 |
-| direct_sub_match^ | 是否启用v1.1暴力字幕匹配 |
-| max_ep-range^ | v1.1匹配能够接受的最大集数长度 |
+| 变量名 | 作用 | 版本 | 
+| --- | --- | --- | 
+| subext | 可以匹配到的字幕扩展名 | 1.0.6 |
+| vidext | 可以匹配到的视频扩展名 | 1.0.6 |
+| ass_subdir | 搜索字幕时是否搜索子目录 | 1.0.6.1 |
+| vid_subdir | 搜索视频时是否搜索子目录 | 1.0.6.1 |
+| cache_dir | 设定缓存文件的临时存放路径 | 1.0.7fST |
+| check_same | 是否启用视频字幕匹配判断功能<sup>[1](#check_same)</sup> | 1.0.9 |
+| check_same_ex | 是否使用命令扩展加速`check_same`<sup>[2](#check_same_ex)</sup> | 1.0.10α |
+| new_match_method | 是否启用v1.1新匹配 | 1.1 |
+| direct_sub_match | 是否启用v1.1暴力字幕匹配 | 1.1 |
+| max_ep-range | v1.1匹配能够接受的最大集数长度 | 1.1 |
 
 **<a name="check_same">1</a>**: 该功能能够判断字幕是否已经和视频匹配，若匹配则不再重命名，启用该功能会明显降低速度
 
 **<a name="check_same_ex">2</a>**: 若使用命令扩展加速则会自动省略所有的半角感叹号`!`，但速度有明显提升（尽管还是很慢）
 
 **AUTO设定**
-| 变量名 | 作用 |
-| --- | --- |
-| show_howlong | 是否显示一次文件名比较所花费的时间 |
-| compare_limit | 两文件名之间误差的最大值，超过则不再继续比较 |
-| compare_limit_method | 控制达到`compare_limit`之后如何输出误差量 |
-| drop_minus | 丢弃误差量为负的结果（结合`compare_limit_method=""`使用）|
-| deviation_a | 集数长度容差<sup>[3](#deviation)</sup> |
-| deviation_b | 集数位置容差<sup>[3](#deviation)</sup> |
-| count_range | 控制每个文件要与多少个文件进行比较<sup>[4](#count_range)</sup> |
-| ls_step | 控制字符串长度计算函数的搜索步长`step`<sup>[5](#ls_step)</sup> |
-| com_step | 控制文件名比较函数的搜索步长`step`<sup>[5](#ls_step)</sup> |
-| same_long_v | *旧式算法* 控制是否对视频文件启用同长度文件名过滤<sup>[6](#same_long)</sup> |
-| same_long_s | *旧式算法* 控制是否对字幕文件启用同长度文件名过滤<sup>[6](#same_long)</sup> |
-| ext_use_most_v | *旧式算法* 控制是否对视频文件启用同扩展名过滤<sup>[7](#ext_use)</sup> |
-| ext_use_most_s | *旧式算法* 控制是否对字幕文件启用同扩展名过滤<sup>[7](#ext_use)</sup> |
+| 变量名 | 作用 | 版本 |
+| --- | --- | --- |
+| show_howlong | 是否显示一次文件名比较所花费的时间 | 1.0.8 |
+| compare_limit | 两文件名之间误差的最大值，超过则不再继续比较 | 1.0.7fS |
+| compare_limit_method | 控制达到`compare_limit`之后如何输出误差量 | 1.0.10 |
+| drop_minus | 丢弃误差量为负的结果（结合`compare_limit_method=""`使用）| 1.0.12 |
+| deviation_a | 集数长度容差<sup>[3](#deviation)</sup> | 1.0.7fS |
+| deviation_b | 集数位置容差<sup>[3](#deviation)</sup> | 1.0.7fS |
+| count_range | 控制每个文件要与多少个文件进行比较<sup>[4](#count_range)</sup> | 1.0.2 |
+| ls_step | 控制字符串长度计算函数的搜索步长`step`<sup>[5](#ls_step)</sup> | 1.0.3 |
+| com_step | 控制文件名比较函数的搜索步长`step`<sup>[5](#ls_step)</sup> | 1.0.4 |
+| same_long_v | *旧式算法* 控制是否对视频文件启用同长度文件名过滤<sup>[6](#same_long)</sup> | 1.0.6 |
+| same_long_s | *旧式算法* 控制是否对字幕文件启用同长度文件名过滤<sup>[6](#same_long)</sup> | 1.0.6 |
+| ext_use_most_v | *旧式算法* 控制是否对视频文件启用同扩展名过滤<sup>[7](#ext_use)</sup> | 1.0.6 |
+| ext_use_most_s | *旧式算法* 控制是否对字幕文件启用同扩展名过滤<sup>[7](#ext_use)</sup> | 1.0.6 |
 
 **<a name="deviation">3</a>**: 位置容差指的是在最终位置运算时能够取到的最大值或最小值为多少
 	<br>其中集数长度将从该误差范围中选取最小值，而集数位置将会选取最大值
