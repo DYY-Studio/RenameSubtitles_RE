@@ -1,8 +1,10 @@
 # RenameSubtitles_RE
-### 适用于重命名字幕使其与视频匹配的Windows批量处理脚本（Latest Update：v1.1）
+### 适用于重命名字幕使其与视频匹配的Windows批量处理脚本（Latest Update：v1.1.1）
 ### Copyright(c) 2019-2021 yyfll (dyystudio@qq.com)
 
 更快，更准确的新一代视频字幕匹配批处理，NOW COMPLETE！
+
+# 本脚本已停止更新，所提供的的功能将会集成至[ASFMKV Py](https://github.com/DYY-Studio/AddSubFontMKV_py)
 
 ## 为什么是RE？
 
